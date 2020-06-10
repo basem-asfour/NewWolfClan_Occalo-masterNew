@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WolfClan.SoliHub.Models", "WolfClan.SoliHub.Models\WolfClan.SoliHub.Models.csproj", "{3092E67F-CC8E-4C0A-BB09-EE9C2503D7F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WolfClan.SoliHub.Abstracts", "WolfClan.SoliHub.Abstracts\WolfClan.SoliHub.Abstracts.csproj", "{E64D51F5-12CF-43BC-A984-C92B6A1A1A95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WolfClan.SoliHub.Services", "WolfClan.SoliHub.Services\WolfClan.SoliHub.Services.csproj", "{58AEED56-11D9-4390-A1C4-F9D187690123}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WolfClan.SoliHub.Helpers", "WolfClan.SoliHub.Helpers\WolfClan.SoliHub.Helpers.csproj", "{D2FA06AB-4C2D-4A8B-A7CA-957EEF2848F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WolfClan.SoliHub.Portal", "WolfClan.SoliHub.Portal\WolfClan.SoliHub.Portal.csproj", "{2AE2973B-81EC-4172-8FA1-C2217B08A017}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WolfClan.SoliHub.Domain", "WolfClan.SoliHub.Domain", "{797110A0-E4C5-4954-AFB8-AA08A2921EF7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WolfClan.SoliHub.Presentation", "WolfClan.SoliHub.Presentation", "{54CF3545-2A0C-4B36-AC92-61E4548C1D45}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WolfClan.SoliHub.Libraries", "WolfClan.SoliHub.Libraries", "{2BA5CF54-62E1-485E-8D42-E6F5A6C49C9B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WolfClan.SoliHub.Resources", "WolfClan.SoliHub.Resources", "{DB1C4138-01E4-45FD-9AC2-AA1946C07F8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WolfClan.SoliHub.Resource", "WolfClan.SoliHub.Resource\WolfClan.SoliHub.Resource.csproj", "{3B42C82D-6D9D-41E7-BDBA-E7B4211C17C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WolfClan.SoliHub.API", "WolfClan.SoliHub.API\WolfClan.SoliHub.API.csproj", "{C0285A34-76A2-415F-9F7A-417C02EC1CE8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3092E67F-CC8E-4C0A-BB09-EE9C2503D7F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3092E67F-CC8E-4C0A-BB09-EE9C2503D7F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3092E67F-CC8E-4C0A-BB09-EE9C2503D7F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3092E67F-CC8E-4C0A-BB09-EE9C2503D7F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E64D51F5-12CF-43BC-A984-C92B6A1A1A95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E64D51F5-12CF-43BC-A984-C92B6A1A1A95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E64D51F5-12CF-43BC-A984-C92B6A1A1A95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E64D51F5-12CF-43BC-A984-C92B6A1A1A95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58AEED56-11D9-4390-A1C4-F9D187690123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58AEED56-11D9-4390-A1C4-F9D187690123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58AEED56-11D9-4390-A1C4-F9D187690123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58AEED56-11D9-4390-A1C4-F9D187690123}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2FA06AB-4C2D-4A8B-A7CA-957EEF2848F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2FA06AB-4C2D-4A8B-A7CA-957EEF2848F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2FA06AB-4C2D-4A8B-A7CA-957EEF2848F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2FA06AB-4C2D-4A8B-A7CA-957EEF2848F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AE2973B-81EC-4172-8FA1-C2217B08A017}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AE2973B-81EC-4172-8FA1-C2217B08A017}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AE2973B-81EC-4172-8FA1-C2217B08A017}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AE2973B-81EC-4172-8FA1-C2217B08A017}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B42C82D-6D9D-41E7-BDBA-E7B4211C17C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B42C82D-6D9D-41E7-BDBA-E7B4211C17C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B42C82D-6D9D-41E7-BDBA-E7B4211C17C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B42C82D-6D9D-41E7-BDBA-E7B4211C17C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0285A34-76A2-415F-9F7A-417C02EC1CE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0285A34-76A2-415F-9F7A-417C02EC1CE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0285A34-76A2-415F-9F7A-417C02EC1CE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0285A34-76A2-415F-9F7A-417C02EC1CE8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3092E67F-CC8E-4C0A-BB09-EE9C2503D7F9} = {54CF3545-2A0C-4B36-AC92-61E4548C1D45}
+		{E64D51F5-12CF-43BC-A984-C92B6A1A1A95} = {797110A0-E4C5-4954-AFB8-AA08A2921EF7}
+		{58AEED56-11D9-4390-A1C4-F9D187690123} = {797110A0-E4C5-4954-AFB8-AA08A2921EF7}
+		{D2FA06AB-4C2D-4A8B-A7CA-957EEF2848F8} = {2BA5CF54-62E1-485E-8D42-E6F5A6C49C9B}
+		{2AE2973B-81EC-4172-8FA1-C2217B08A017} = {54CF3545-2A0C-4B36-AC92-61E4548C1D45}
+		{3B42C82D-6D9D-41E7-BDBA-E7B4211C17C6} = {DB1C4138-01E4-45FD-9AC2-AA1946C07F8A}
+		{C0285A34-76A2-415F-9F7A-417C02EC1CE8} = {54CF3545-2A0C-4B36-AC92-61E4548C1D45}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4CEC3F50-4BBC-45FC-8A05-AE4D764F1FF3}
+	EndGlobalSection
+EndGlobal

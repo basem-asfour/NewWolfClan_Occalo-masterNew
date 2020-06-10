@@ -1,0 +1,391 @@
+﻿
+@{
+    ViewBag.Title = "Chat";
+}
+<div id="divChat">
+    <div id="divChatContent" class="chat-content"></div>
+    <div id="divEmojisMenu" class="emojis-menu">
+        <div id="divEmojisGroupTop" class="emojis-group-top">
+            <div class="emoji-grid-group">
+                <a>😄️</a><a>😃️</a><a>😀️</a><a>😊️</a><a>😉️</a><a>😍️</a><a>😘️</a><a>😚️</a><a>😗️</a><a>😙️</a><a>😜️</a><a>😝️</a><a>😛️</a><a>😳️</a><a>😁️</a><a>😔️</a><a>😌️</a><a>😒️</a><a>😞️</a><a>😣️</a><a>😢️</a><a>😂️</a><a>😭️</a><a>😪️</a><a>😥️</a><a>😰️</a><a>😅️</a><a>😓️</a><a>😩️</a><a>😫️</a><a>😨️</a><a>😱️</a><a>😠️</a><a>😡️</a><a>😤️</a><a>😖️</a><a>😆️</a><a>😋️</a><a>😷️</a><a>😎️</a><a>😴️</a><a>😵️</a><a>😲️</a><a>😟️</a><a>😦️</a><a>😧️</a><a>😈️</a><a>👿️</a><a>😮️</a><a>😬️</a><a>😐️</a><a>😕️</a><a>😯️</a><a>😶️</a><a>😇️</a><a>😏️</a><a>😑️</a><a>👲️</a><a>👳️</a><a>👮️</a><a>👷️</a><a>💂️</a><a>👶️</a><a>👦️</a><a>👧️</a><a>👨️</a><a>👩️</a><a>👴️</a><a>👵️</a><a>👱️</a><a>👼️</a><a>👸️</a><a>😺️</a><a>😸️</a><a>😻️</a><a>😽️</a><a>😼️</a><a>🙀️</a><a>😿️</a><a>😹️</a><a>😾️</a><a>👹️</a><a>👺️</a><a>🙈️</a><a>🙉️</a><a>🙊️</a><a>💀️</a><a>👽️</a><a>💩️</a><a>🔥️</a><a>✨️</a><a>🌟️</a><a>💫️</a><a>💥️</a><a>💢️</a><a>💦️</a><a>💧️</a><a>💤️</a><a>💨️</a><a>👂️</a><a>👀️</a><a>👃️</a><a>👅️</a><a>👄️</a><a>👍️</a><a>👎️</a><a>👌️</a><a>👊️</a><a>✊️</a><a>✌️</a><a>👋️</a><a>✋️</a><a>👐️</a><a>👆️</a><a>👇️</a><a>👉️</a><a>👈️</a><a>🙌️</a><a>🙏️</a><a>☝️</a><a>👏️</a><a>💪️</a><a>🚶️</a><a>🏃️</a><a>💃️</a><a>👫️</a><a>👪️</a><a>👬️</a><a>👭️</a><a>💏️</a><a>💑️</a><a>👯️</a><a>🙆️</a><a>🙅️</a><a>💁️</a><a>🙋️</a><a>💆️</a><a>💇️</a><a>💅️</a><a>👰️</a><a>🙎️</a><a>🙍️</a><a>🙇️</a><a>🎩️</a><a>👑️</a><a>👒️</a><a>👟️</a><a>👞️</a><a>👡️</a><a>👠️</a><a>👢️</a><a>👕️</a><a>👔️</a><a>👚️</a><a>👗️</a><a>🎽️</a><a>👖️</a><a>👘️</a><a>👙️</a><a>💼️</a><a>👜️</a><a>👝️</a><a>👛️</a><a>👓️</a><a>🎀️</a><a>🌂️</a><a>💄️</a><a>💛️</a><a>💙️</a><a>💜️</a><a>💚️</a><a>❤️</a><a>💔️</a><a>💗️</a><a>💓️</a><a>💕️</a><a>💖️</a><a>💞️</a><a>💘️</a><a>💌️</a><a>💋️</a><a>💍️</a><a>💎️</a><a>👤️</a><a>👥️</a><a>💬️</a><a>👣️</a><a>💭️</a>
+            </div>
+            <div class="emoji-grid-group" style="display: none;">
+                <a>🐶️</a><a>🐺️</a><a>🐱️</a><a>🐭️</a><a>🐹️</a><a>🐰️</a><a>🐸️</a><a>🐯️</a><a>🐨️</a><a>🐻️</a><a>🐷️</a><a>🐽️</a><a>🐮️</a><a>🐗️</a><a>🐵️</a><a>🐒️</a><a>🐴️</a><a>🐑️</a><a>🐘️</a><a>🐼️</a><a>🐧️</a><a>🐦️</a><a>🐤️</a><a>🐥️</a><a>🐣️</a><a>🐔️</a><a>🐍️</a><a>🐢️</a><a>🐛️</a><a>🐝️</a><a>🐜️</a><a>🐞️</a><a>🐌️</a><a>🐙️</a><a>🐚️</a><a>🐠️</a><a>🐟️</a><a>🐬️</a><a>🐳️</a><a>🐋️</a><a>🐄️</a><a>🐏️</a><a>🐀️</a><a>🐃️</a><a>🐅️</a><a>🐇️</a><a>🐉️</a><a>🐎️</a><a>🐐️</a><a>🐓️</a><a>🐕️</a><a>🐖️</a><a>🐁️</a><a>🐂️</a><a>🐲️</a><a>🐡️</a><a>🐊️</a><a>🐫️</a><a>🐪️</a><a>🐆️</a><a>🐈️</a><a>🐩️</a><a>🐾️</a><a>💐️</a><a>🌸️</a><a>🌷️</a><a>🍀️</a><a>🌹️</a><a>🌻️</a><a>🌺️</a><a>🍁️</a><a>🍃️</a><a>🍂️</a><a>🌿️</a><a>🌾️</a><a>🍄️</a><a>🌵️</a><a>🌴️</a><a>🌲️</a><a>🌳️</a><a>🌰️</a><a>🌱️</a><a>🌼️</a><a>🌐️</a><a>🌞️</a><a>🌝️</a><a>🌚️</a><a>🌑️</a><a>🌒️</a><a>🌓️</a><a>🌔️</a><a>🌕️</a><a>🌖️</a><a>🌗️</a><a>🌘️</a><a>🌜️</a><a>🌛️</a><a>🌙️</a><a>🌍️</a><a>🌎️</a><a>🌏️</a><a>🌋️</a><a>🌌️</a><a>🌠️</a><a>⭐️</a><a>☀️</a><a>⛅️</a><a>☁️</a><a>⚡️</a><a>☔️</a><a>❄️</a><a>⛄️</a><a>🌀️</a><a>🌁️</a><a>🌈️</a><a>🌊️</a>
+            </div>
+            <div class="emoji-grid-group" style="display: none;">
+                <a>🎍️</a><a>💝️</a><a>🎎️</a><a>🎒️</a><a>🎓️</a><a>🎏️</a><a>🎆️</a><a>🎇️</a><a>🎐️</a><a>🎑️</a><a>🎃️</a><a>👻️</a><a>🎅️</a><a>🎄️</a><a>🎁️</a><a>🎋️</a><a>🎉️</a><a>🎊️</a><a>🎈️</a><a>🎌️</a><a>🔮️</a><a>🎥️</a><a>📷️</a><a>📹️</a><a>📼️</a><a>💿️</a><a>📀️</a><a>💽️</a><a>💾️</a><a>💻️</a><a>📱️</a><a>☎️</a><a>📞️</a><a>📟️</a><a>📠️</a><a>📡️</a><a>📺️</a><a>📻️</a><a>🔊️</a><a>🔉️</a><a>🔈️</a><a>🔇️</a><a>🔔️</a><a>🔕️</a><a>📣️</a><a>📢️</a><a>⏳️</a><a>⌛️</a><a>⏰️</a><a>⌚️</a><a>🔓️</a><a>🔒️</a><a>🔏️</a><a>🔐️</a><a>🔑️</a><a>🔎️</a><a>💡️</a><a>🔦️</a><a>🔆️</a><a>🔅️</a><a>🔌️</a><a>🔋️</a><a>🔍️</a><a>🛀️</a><a>🛁️</a><a>🚿️</a><a>🚽️</a><a>🔧️</a><a>🔩️</a><a>🔨️</a><a>🚪️</a><a>🚬️</a><a>💣️</a><a>🔫️</a><a>🔪️</a><a>💊️</a><a>💉️</a><a>💰️</a><a>💴️</a><a>💵️</a><a>💷️</a><a>💶️</a><a>💳️</a><a>💸️</a><a>📲️</a><a>📧️</a><a>📥️</a><a>📤️</a><a>✉️</a><a>📩️</a><a>📨️</a><a>📯️</a><a>📫️</a><a>📪️</a><a>📬️</a><a>📭️</a><a>📮️</a><a>📦️</a><a>📝️</a><a>📄️</a><a>📃️</a><a>📑️</a><a>📊️</a><a>📈️</a><a>📉️</a><a>📜️</a><a>📋️</a><a>📅️</a><a>📆️</a><a>📇️</a><a>📁️</a><a>📂️</a><a>✂️</a><a>📌️</a><a>📎️</a><a>✒️</a><a>✏️</a><a>📏️</a><a>📐️</a><a>📕️</a><a>📗️</a><a>📘️</a><a>📙️</a><a>📓️</a><a>📔️</a><a>📒️</a><a>📚️</a><a>📖️</a><a>🔖️</a><a>📛️</a><a>🔬️</a><a>🔭️</a><a>📰️</a><a>🎨️</a><a>🎬️</a><a>🎤️</a><a>🎧️</a><a>🎼️</a><a>🎵️</a><a>🎶️</a><a>🎹️</a><a>🎻️</a><a>🎺️</a><a>🎷️</a><a>🎸️</a><a>👾️</a><a>🎮️</a><a>🃏️</a><a>🎴️</a><a>🀄️</a><a>🎲️</a><a>🎯️</a><a>🏈️</a><a>🏀️</a><a>⚽️</a><a>⚾️</a><a>🎾️</a><a>🎱️</a><a>🏉️</a><a>🎳️</a><a>⛳️</a><a>🚵️</a><a>🚴️</a><a>🏁️</a><a>🏇️</a><a>🏆️</a><a>🎿️</a><a>🏂️</a><a>🏊️</a><a>🏄️</a><a>🎣️</a><a>☕️</a><a>🍵️</a><a>🍶️</a><a>🍼️</a><a>🍺️</a><a>🍻️</a><a>🍸️</a><a>🍹️</a><a>🍷️</a><a>🍴️</a><a>🍕️</a><a>🍔️</a><a>🍟️</a><a>🍗️</a><a>🍖️</a><a>🍝️</a><a>🍛️</a><a>🍤️</a><a>🍱️</a><a>🍣️</a><a>🍥️</a><a>🍙️</a><a>🍘️</a><a>🍚️</a><a>🍜️</a><a>🍲️</a><a>🍢️</a><a>🍡️</a><a>🍳️</a><a>🍞️</a><a>🍩️</a><a>🍮️</a><a>🍦️</a><a>🍨️</a><a>🍧️</a><a>🎂️</a><a>🍰️</a><a>🍪️</a><a>🍫️</a><a>🍬️</a><a>🍭️</a><a>🍯️</a><a>🍎️</a><a>🍏️</a><a>🍊️</a><a>🍋️</a><a>🍒️</a><a>🍇️</a><a>🍉️</a><a>🍓️</a><a>🍑️</a><a>🍈️</a><a>🍌️</a><a>🍐️</a><a>🍍️</a><a>🍠️</a><a>🍆️</a><a>🍅️</a><a>🌽️</a>
+            </div>
+            <div class="emoji-grid-group" style="display: none;">
+                <a>🏠️</a><a>🏡️</a><a>🏫️</a><a>🏢️</a><a>🏣️</a><a>🏥️</a><a>🏦️</a><a>🏪️</a><a>🏩️</a><a>🏨️</a><a>💒️</a><a>⛪️</a><a>🏬️</a><a>🏤️</a><a>🌇️</a><a>🌆️</a><a>🏯️</a><a>🏰️</a><a>⛺️</a><a>🏭️</a><a>🗼️</a><a>🗾️</a><a>🗻️</a><a>🌄️</a><a>🌅️</a><a>🌃️</a><a>🗽️</a><a>🌉️</a><a>🎠️</a><a>🎡️</a><a>⛲️</a><a>🎢️</a><a>🚢️</a><a>⛵️</a><a>🚤️</a><a>🚣️</a><a>⚓️</a><a>🚀️</a><a>✈️</a><a>💺️</a><a>🚁️</a><a>🚂️</a><a>🚊️</a><a>🚉️</a><a>🚞️</a><a>🚆️</a><a>🚄️</a><a>🚅️</a><a>🚈️</a><a>🚇️</a><a>🚝️</a><a>🚃️</a><a>🚋️</a><a>🚎️</a><a>🚌️</a><a>🚍️</a><a>🚙️</a><a>🚘️</a><a>🚗️</a><a>🚕️</a><a>🚖️</a><a>🚛️</a><a>🚚️</a><a>🚨️</a><a>🚓️</a><a>🚔️</a><a>🚒️</a><a>🚑️</a><a>🚐️</a><a>🚲️</a><a>🚡️</a><a>🚟️</a><a>🚠️</a><a>🚜️</a><a>💈️</a><a>🚏️</a><a>🎫️</a><a>🚦️</a><a>🚥️</a><a>⚠️</a><a>🚧️</a><a>🔰️</a><a>⛽️</a><a>🏮️</a><a>🎰️</a><a>♨️</a><a>🗿️</a><a>🎪️</a><a>🎭️</a><a>📍️</a><a>🚩️</a>
+            </div>
+            <div class="emoji-grid-group" style="display: none;">
+                <a>🔟️</a><a>🔢️</a><a>🔣️</a><a>⬆️</a><a>⬇️</a><a>⬅️</a><a>➡️</a><a>🔠️</a><a>🔡️</a><a>🔤️</a><a>↗️</a><a>↖️</a><a>↘️</a><a>↙️</a><a>🔄️</a><a>◀️</a><a>▶️</a><a>🔼️</a><a>🔽️</a><a>↩️</a><a>↪️</a><a>ℹ️</a><a>⏪️</a><a>⏩️</a><a>⏫️</a><a>⏬️</a><a>⤵️</a><a>⤴️</a><a>🆗️</a><a>🔀️</a><a>🔁️</a><a>🔂️</a><a>🆕️</a><a>🆙️</a><a>🆒️</a><a>🆓️</a><a>🆖️</a><a>📶️</a><a>🎦️</a><a>🈁️</a><a>🈯️</a><a>🈳️</a><a>🈵️</a><a>🈴️</a><a>🈲️</a><a>🉐️</a><a>🈹️</a><a>🈺️</a><a>🈶️</a><a>🈚️</a><a>🚻️</a><a>🚹️</a><a>🚺️</a><a>🚼️</a><a>🚾️</a><a>🚰️</a><a>🚮️</a><a>🅿️</a><a>♿️</a><a>🚭️</a><a>🈷️</a><a>🈸️</a><a>🈂️</a><a>Ⓜ️</a><a>🛂️</a><a>🛄️</a><a>🛅️</a><a>🛃️</a><a>🉑️</a><a>㊙️</a><a>㊗️</a><a>🆑️</a><a>🆘️</a><a>🆔️</a><a>🚫️</a><a>🔞️</a><a>📵️</a><a>🚯️</a><a>🚱️</a><a>🚳️</a><a>🚷️</a><a>🚸️</a><a>⛔️</a><a>✳️</a><a>❇️</a><a>❎️</a><a>✅️</a><a>✴️</a><a>💟️</a><a>🆚️</a><a>📳️</a><a>📴️</a><a>🅰️</a><a>🅱️</a><a>🆎️</a><a>🅾️</a><a>💠️</a><a>➿️</a><a>♻️</a><a>♈️</a><a>♉️</a><a>♊️</a><a>♋️</a><a>♌️</a><a>♍️</a><a>♎️</a><a>♏️</a><a>♐️</a><a>♑️</a><a>♒️</a><a>♓️</a><a>⛎️</a><a>🔯️</a><a>🏧️</a><a>💹️</a><a>💲️</a><a>💱️</a><a>❌️</a><a>⁉️</a><a>❗️</a><a>❓️</a><a>❕️</a><a>❔️</a><a>⭕️</a><a>🔝️</a><a>🔚️</a><a>🔙️</a><a>🔛️</a><a>🔜️</a><a>🔃️</a><a>🕛️</a><a>🕧️</a><a>🕐️</a><a>🕜️</a><a>🕑️</a><a>🕝️</a><a>🕒️</a><a>🕞️</a><a>🕓️</a><a>🕟️</a><a>🕔️</a><a>🕠️</a><a>🕕️</a><a>🕖️</a><a>🕗️</a><a>🕘️</a><a>🕙️</a><a>🕚️</a><a>🕡️</a><a>🕢️</a><a>🕣️</a><a>🕤️</a><a>🕥️</a><a>🕦️</a><a>✖️</a><a>➕️</a><a>➖️</a><a>➗️</a><a>💮️</a><a>💯️</a><a>✔️</a><a>☑️</a><a>🔘️</a><a>🔗️</a><a>➰️</a><a>〰️</a><a>〽️</a><a>🔱️</a><a>◼️</a><a>◻️</a><a>◾️</a><a>◽️</a><a>▪️</a><a>🔺️</a><a>🔲️</a><a>🔳️</a><a>⚫️</a><a>⚪️</a><a>🔴️</a><a>🔵️</a><a>🔻️</a><a>⬜️</a><a>⬛️</a><a>🔶️</a><a>🔷️</a><a>🔸️</a><a>🔹️</a>
+            </div>
+        </div>
+        <div id="divEmojisGroupBottom" class="emojis-group-bottom">
+            <div class="button-emojis-group" style="background-color: #ddd;">
+                <p class="button-emoji-content">😃️</p>
+            </div>
+            <div class="button-emojis-group">
+                <p class="button-emoji-content">🐶️</p>
+            </div>
+            <div class="button-emojis-group">
+                <p class="button-emoji-content">🔔️</p>
+            </div>
+            <div class="button-emojis-group">
+                <p class="button-emoji-content">🚔️</p>
+            </div>
+            <div class="button-emojis-group">
+                <p class="button-emoji-content">🕑️</p>
+            </div>
+        </div>
+    </div>
+    <div class="chat-bar m-1">
+        <div class="chat-bar-text-area">
+            <textarea id="txtMessage" dir="auto" class="txt form-control" placeholder="Type something..."></textarea>
+            <div id="btnEmojis" class="emojis-button d-flex align-items-center justify-content-center">
+                <img width="26" height="26" src="/Images/ImageEmoji.svg" alt="" />
+            </div>
+        </div>
+        <div class="chat-bar-splitter"></div>
+        <div class="chat-bar-button">
+            <div id="btnSend" class="button-chat ripple" data-toggle="tooltip" data-placement="top" title="Send">
+                <img width="26" height="26" src="/Images/ImageSend.svg" style="margin-left:5px;" alt="send" />
+            </div>
+        </div>
+        <div id="divLeft" class="chat-bar-button">
+            <div id="btnLeft" class="button-chat ripple" data-toggle="tooltip" data-placement="top" title="Left Chat">
+                <img width="26" height="26" src="/Images/ImageBlock.svg" alt="left chat" />
+            </div>
+        </div>
+        <div id="divRefresh" class="chat-bar-button" hidden>
+            <div id="btnRefresh" class="button-chat ripple">
+                <img width="26" height="26" src="/Images/ImageRefresh.svg" alt="Refresh" />
+            </div>
+        </div>
+    </div>
+    <div id="divTyping" class="typing" style="display: none;">
+        <div class="spinner-typing">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+        <p class="text-is-typing">Stranger is typing</p>
+    </div>
+</div>
+
+<div id="divLoadingBackground" class="loading-background">
+
+    <div id="divLoading" class="loading-content">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+        <p class="normal-text" style="text-align: center;">Please wait to find a stranger...</p>
+    </div>
+    <div id="divError" class="loading-content" hidden>
+        <p class="normal-text" style="text-align: center;">An error occurred while connecting to the server :(</p>
+        <button id="btnBack" class="button-round-box ripple bg-danger" style="margin-top: 10px;">Back</button>
+    </div>
+    <div id="divTryAgain" class="loading-content">
+        <p class="normal-text" style="text-align: center;">Sorry! We couldn't find any stranger :(</p>
+        <button id="btnTryAgain" class="button-round-box ripple bg-danger" style="margin-top: 10px;">Try again</button>
+    </div>
+</div>
+
+<div id="divLeaveConfirmationBackground" class="leave-confirmation-background">
+    <div class="leave-confirmation-content">
+        <p class="header-text py-sm-5">Are you sure you want to leave this chat ?</p>
+        <button id="btnLeaveYes" class="button-round-box bg-success ripple mr-2">Yes</button>
+        <button id="btnLeaveNo" class="button-round-box bg-danger ripple ml-2">No</button>
+    </div>
+</div>
+
+
+<audio id="soundMessageAppear">
+    <source src="/Content/sounds/SoundMessageAppear.ogg" type="audio/ogg">
+    <source src="/Content/sounds/SoundMessageAppear.mp3" type="audio/mpeg">
+</audio>
+<audio id="soundMessageNotification">
+    <source src="/Content/sounds/SoundMessageNotification.ogg" type="audio/ogg">
+    <source src="/Content/sounds/SoundMessageNotification.mp3" type="audio/mpeg">
+</audio>
+@section scripts {
+
+    <script>
+           var soundMessageAppear = document.getElementById("soundMessageAppear");
+           var soundMessageNotification = document.getElementById("soundMessageNotification");
+           var contentdiv = document.getElementById("divChatContent");
+           var isMainTitle = true;
+           var isFocused = true;
+           var alertInterval = null;
+           var chat;
+          var emojisGroupBottom = divEmojisGroupBottom.children;
+         var emojisGroupTop = divEmojisGroupTop.children;
+        var _loop_1 = function (i) {
+    // Initialize each emojis group - When click on each, show the emojis group
+    emojisGroupBottom[i].addEventListener("click", function (e) { return setEmojiButtonToGroup(i); });
+    // Initialize each emoji - When click on each, print the related emoji on txtMessage
+    emojiGroupTopInsideEmoji = emojisGroupTop[i].children;
+    var _loop_2 = function (j) {
+        $(emojiGroupTopInsideEmoji[j]).addClass("emoji-button");
+        var strContent = emojiGroupTopInsideEmoji[j].textContent;
+        emojiGroupTopInsideEmoji[j].addEventListener("click", function (e) { return insertAtCaret(strContent); });
+    };
+    for (var j = 0; j < emojiGroupTopInsideEmoji.length; j++) {
+        _loop_2(j);
+    }
+};
+var emojiGroupTopInsideEmoji;
+for (var i = 0; i < emojisGroupBottom.length; i++) {
+    _loop_1(i);
+}
+// Emoji menu hide if you click out of it
+$(document).mousedown(function (e) {
+    var emojiMenuContainer = $(divEmojisMenu);
+    if (emojiMenuContainer.css("opacity") == 1 && !emojiMenuContainer.is(e.target) && emojiMenuContainer.has(e.target).length === 0) {
+        toggleEmojis();
+    }
+});
+
+        // Set interval that every 3000 milisecond, hide the typing div
+setInterval(function () {
+    $(divTyping).css("display", "none");
+}, 3000);
+
+        // Check that you focus on the SoliHub tab or not
+onVisibilityChange(function (visible) {
+    isFocused = visible;
+    if (isFocused) {
+        document.title = "Occalo - Chat";
+        clearInterval(alertInterval);
+    }
+});
+
+            $(function () {
+              var url = window.location.href;
+              chat = $.connection.chatHub;
+              chat.client.getOnlineUsers = function (onlineUsersStr) {
+              document.getElementById("txtOnlineUsers").innerHTML = 'Online users: <span style="font-weight:bold">'+onlineUsersStr+'</span>';
+                };
+
+    chat.client.receiveMessage = function(message){
+    var  pMesssage = document.createElement("P");
+    pMesssage.className = "message-stranger";
+    pMesssage.dir = "auto";
+    pMesssage.innerText = message;
+    contentdiv.appendChild(pMesssage);
+    contentdiv.scrollTop = contentdiv.scrollHeight;
+    // Play message notification sound and change the tab title
+    if (!isFocused) {
+        soundMessageNotification.play();
+        clearInterval(alertInterval);
+        alertInterval = setInterval(alertTitleNewMessage, 700);
+    }
+    else {
+        soundMessageAppear.play();
+    }
+    };
+    chat.client.strangerIsTyping = function () {
+          $('#divTyping').css("display", "flex");
+       }, 5000;
+
+    chat.client.strangerLeft = function () {
+      contentdiv.innerHTML += "<p class=\"connect-disconnect-message\">Stranger left the chat</p>";
+      contentdiv.scrollTop =   contentdiv.scrollHeight;
+    $("#divLeft").hide();
+    $("#divRefresh").show();
+    $("#txtMessage").prop("disabled", true);
+    document.getElementById("btnSend").removeEventListener("click", sendMessage);
+    $("#btnSend").removeClass("ripple");
+    $("#btnSend").css("background-color", "#465061");
+    $("#btnSend").css("cursor", "default");
+    $('#divEmojisMenu').hide();
+    document.getElementById("btnEmojis").removeEventListener("click", toggleEmojis);
+    $("#btnEmojis").css("background-color", "rgb(235, 235, 228)");
+    $("#btnEmojis").css("cursor", "default");
+     chat.server.deleteRoom();
+    };
+    chat.client.joinToStranger = function (isAloneStranger) {
+    if (isAloneStranger) {
+        $('#divLoading').hide();
+        $('#divError').hide();
+        $('#divLoadingBackground').hide();
+        $('#divChat').show();
+        contentdiv.innerHTML += '<p class="connect-disconnect-message">Youre connected to stranger</p>';
+        contentdiv.innerHTML += '<p class="connect-disconnect-message">Now type something...</p>';
+        contentdiv.scrollTop = contentdiv.scrollHeight;
+    }
+        };
+          $.connection.hub.start();
+               $.connection.hub.start().done(function() {
+                chat.server.checkOnlineUsers(url);
+                   searchStranger();
+               });
+            });
+
+            var searchStranger = function () {
+                chat.server.searchStranger();
+                 setTimeout(function () {
+                if ($('#divLoading').is(":visible")) {
+                $('#divLoading').css("visibility", "hidden");
+                $('#divError').hide();
+                $('#divTryAgain').css("visibility", "visible");
+                     }
+                         }, 60000);
+            }
+
+
+        function setEmojiButtonToGroup(index) {
+    // Hide all emojis group and remove gray background from emojis button
+    for (var i = 0; i < emojisGroupTop.length; i++) {
+        $(emojisGroupTop[i]).css("display", "none");
+        $(emojisGroupBottom[i]).css("background-color", "#fff");
+    }
+    // Show the selected emojis group and set tje gray background to selected emojis button
+    $(emojisGroupTop[index]).css("display", "grid");
+    $(emojisGroupBottom[index]).css("background-color", "#ddd");
+        }
+        function isTyping() {
+        chat.server.isTyping();
+}
+            function sendMessage() {
+    var message = txtMessage.value.replace(/\n/g, "").replace(/ /g, "");
+    if (message !== "") {
+        var refinedMessage = txtMessage.value;
+        chat.server.sendMessage(refinedMessage);
+                let pMesssage = document.createElement("P");
+                pMesssage.className = "message-caller";
+                pMesssage.dir = "auto";
+                pMesssage.innerText = refinedMessage;
+                contentdiv.appendChild(pMesssage);
+                contentdiv.scrollTop = contentdiv.scrollHeight;
+                txtMessage.value = "";
+                soundMessageAppear.play();
+    }
+            }
+
+            function leftChat() {
+    contentdiv.innerHTML += '<p class="connect-disconnect-message">You left the chat</p>';
+    contentdiv.scrollTop = contentdiv.scrollHeight;
+    $('#divLeft').hide();
+    $('#divRefresh').show();
+    $('#txtMessage').prop("disabled", true);
+    $('#divLeaveConfirmationBackground').hide();
+    btnSend.removeEventListener("click", sendMessage);
+    $('#btnSend').removeClass("ripple");
+    $('#btnSend').css("background-color", "#28a745");
+    $('#btnSend').css("opacity", ".5");
+    $('#btnSend').css("cursor", "default");
+    $('#divEmojisMenu').hide();
+    btnEmojis.removeEventListener("click", toggleEmojis);
+    $('#btnEmojis').css("background-color", "rgb(235, 235, 228)");
+                $('#btnEmojis').css("cursor", "default");
+                chat.server.leftChat();
+            }
+            function focusOnTxtMessage(state) {
+    if (state)
+        $('#btnEmojis').css("border-color", "#ced4da");
+    else
+        $('#btnEmojis').css("border-color", "#ccc");
+}
+            function toggleEmojis() {
+    var opacity = $('#divEmojisMenu').css('opacity');
+    if (opacity == 0)
+        $('#divEmojisMenu').animate({ opacity: '1', bottom: '70px' });
+    else if (opacity == 1)
+        $('#divEmojisMenu').animate({ opacity: '0', bottom: '-230px' });
+}
+            function leaveConfirmationDialog(state) {
+    if (state)
+        $('.leave-confirmation-background').css({"opacity": "1", "visibility": "visible"});
+    else
+        $('.leave-confirmation-background').css({"opacity": "0", "visibility": "hidden"});
+            }
+
+            function insertAtCaret(text) {
+    var doc = document;
+    var scrollPos = txtMessage.scrollTop;
+    var strPos = 0;
+    var br = ((txtMessage.selectionStart || txtMessage.selectionStart == 0) ?
+        "ff" : (doc.selection ? "ie" : false));
+    if (br == "ie") {
+        txtMessage.focus();
+        var range = doc.selection.createRange();
+        range.moveStart('character', -txtMessage.value.length);
+        strPos = range.text.length;
+    }
+    else if (br == "ff") {
+        strPos = txtMessage.selectionStart;
+    }
+    var front = (txtMessage.value).substring(0, strPos);
+    var back = (txtMessage.value).substring(strPos, txtMessage.value.length);
+    txtMessage.value = front + text + back;
+    strPos = strPos + text.length;
+    if (br == "ie") {
+        txtMessage.focus();
+        var ieRange = doc.selection.createRange();
+        ieRange.moveStart('character', -txtMessage.value.length);
+        ieRange.moveStart('character', strPos);
+        ieRange.moveEnd('character', 0);
+        ieRange.select();
+    }
+    else if (br == "ff") {
+        txtMessage.selectionStart = strPos;
+        txtMessage.selectionEnd = strPos;
+        txtMessage.focus();
+    }
+    txtMessage.scrollTop = scrollPos;
+            }
+
+
+              $("#btnEmojis").click(function () {toggleEmojis();});
+              $("#btnLeaveYes").click(function () {leftChat(); });
+              $("#btnSend").click(function () { sendMessage(); });
+              $("#btnLeft").click(function () { leaveConfirmationDialog(true);});
+              $("#btnLeaveNo").click(function () {leaveConfirmationDialog(false); });
+              $("#btnRefresh").click(function () {window.location.href = '@Url.Action("Index", "Chat")'; });
+              $("#btnTryAgain").click(function () { window.location.href = '@Url.Action("Index", "Chat")'; });
+              $("#txtMessage").focus(function (event) {return focusOnTxtMessage(true); });
+              $("#txtMessage").blur(function (event) {return focusOnTxtMessage(false);});
+               document.getElementById("txtMessage").addEventListener("input", isTyping);
+
+        function onVisibilityChange(callback) {
+    var visible = true;
+    if (!callback) {
+        throw new Error('no callback given');
+    }
+    function focused() {
+        if (!visible) {
+            callback(visible = true);
+        }
+    }
+    function unfocused() {
+        if (visible) {
+            callback(visible = false);
+        }
+    }
+    // Standards foccus
+    if ('hidden' in document) {
+        document.addEventListener('visibilitychange', function () { (document.hidden ? unfocused : focused)(); });
+    }
+    else {
+        // All others
+        window.onpageshow = window.onfocus = focused;
+        window.onpagehide = window.onblur = unfocused;
+    }
+}
+            $("#txtMessage").keydown(function (event) {
+                if (event.which == 13 && !event.shiftKey) {
+                    sendMessage();
+                    event.preventDefault();
+                }
+            });
+
+        // Change the tab title when receive new message and you don't focus on tab
+function alertTitleNewMessage() {
+    isMainTitle = !isMainTitle;
+    document.title = isMainTitle ? "Occalo - Chat" : "New Message!";
+}
+    </script>
+}

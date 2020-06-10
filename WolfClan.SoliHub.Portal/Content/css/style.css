@@ -1,0 +1,415 @@
+@font-face {
+   font-family: 'SegoeUI';
+   src: url('../fonts/SegoeUI.eot');
+   src: url('../fonts/SegoeUI.eot?#iefix') format('embedded-opentype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('../fonts/SegoeUI.woff') format('woff'),
+       url('../fonts/SegoeUI.ttf') format('truetype'),
+       url('../fonts/SegoeUI.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+   font-family: 'SegoeUI-Light';
+   src: url('../fonts/SegoeUI-Light.eot');
+   src: url('../fonts/SegoeUI-Light.eot?#iefix') format('embedded-opentype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+  font-family: 'SegoeUI-Light';
+  src: url('../fonts/SegoeUI-Light.woff') format('woff'),
+       url('../fonts/SegoeUI-Light.ttf') format('truetype'),
+       url('../fonts/SegoeUI-Light.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+   font-family: 'SegoeUI-Bold';
+   src: url('../fonts/SegoeUI-Bold.eot');
+   src: url('../fonts/SegoeUI-Bold.eot?#iefix') format('embedded-opentype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+  font-family: 'SegoeUI-Bold';
+  src: url('../fonts/SegoeUI-Bold.woff') format('woff'),
+       url('../fonts/SegoeUI-Bold.ttf') format('truetype'),
+       url('../fonts/SegoeUI-Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+    padding:0;
+    margin:0;
+    width:100%;
+    overflow-x:hidden;
+}
+
+div.logo-start {
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("/Images/GapitaLogo.png");
+    background-size: 150px 150px;
+}
+
+h1.header-main-text {
+    font-family: 'SegoeUI-Light';
+    font-size:28pt;
+    font-weight:lighter;
+    text-align:center;
+    margin:20px 20px 0px 20px;
+    color: black;
+}
+
+h2.header-sub-text {
+    font-family: 'SegoeUI';
+    font-size:14pt;
+    font-weight:lighter;
+    text-align:center;
+    margin:5px 20px 0px 20px;
+    color: #818181;
+}
+
+button.button-round-box {
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    font-size:14pt;
+    font-weight:normal;
+    border-radius: 10px;
+    padding: 8px 50px;
+    cursor: pointer;
+    transition: background 0.8s;
+}
+
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+
+.ripple:hover {
+}
+
+.ripple:active {
+  background-color: #0094fe;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+h1.header-text {
+    font-family: 'SegoeUI-Bold';
+    font-size:22pt;
+    font-weight:bold;
+    text-align:center;
+    margin:20px 20px 0px 20px;
+    color: black;
+}
+
+div.content {
+    margin-top: 25px;
+    position: relative;
+    width:100%;
+    overflow: hidden;
+}
+
+p.normal-text {
+    font-family: 'SegoeUI';
+    font-size:13pt;
+    font-weight:normal;
+    text-align:justify;
+    padding: 20px;
+    margin: 0px;
+    color: #fff;
+}
+
+div.chat-bar {
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    direction:ltr;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: #fff;
+    position: fixed;
+}
+
+div.chat-bar-text-area {
+    flex: 1;
+    display: flex;
+}
+
+chat-bar-text-area textarea:disabled {
+    background-color: #fff;
+}
+
+div.chat-bar-button {
+    flex-basis: 55px;
+}
+
+div.chat-bar-splitter {
+    flex-basis: 5px;
+}
+
+textarea.message-text-area {
+    width: calc(100% - 10px);
+    height: 42px;
+    outline: 0;
+    color: black;
+    border-radius: 10px 0px 0px 10px;
+    border: 1px solid #ccc;
+    border-style: solid none solid solid;
+    padding: 5px;
+    text-align: start;
+    font-family: 'SegoeUI';
+    font-size:12pt;
+    font-weight: normal;
+    text-decoration: none;
+    resize: none;
+    margin: 0px 0px 0px 3px;
+}
+
+textarea.message-text-area:focus {
+    outline: none !important;
+    border-color: #0094fe;
+}
+
+div.emojis-button {
+    width: 40px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-style: solid solid solid none;
+    cursor: pointer;
+}
+
+div.emojis-menu {
+    bottom: -230px;
+    right: 10px;
+    position: fixed;
+    background-color: white;
+    float: right;
+    width: 230px;
+    height: 250px;
+    opacity: 0;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    max-height: calc(100vh - 70px);
+}
+
+div.emojis-group-top {
+    width: 100%;
+    height: calc(100% - 41px);
+}
+
+div.emojis-group-bottom {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-style: solid none none none
+}
+
+div.button-emojis-group {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+p.button-emoji-content {
+    margin: 0px;
+    font-size:20px;
+}
+
+div.emoji-grid-group {
+    display: grid;
+    grid-template-columns: repeat(6,16.66667%);
+    height: 200px;
+    overflow-y: scroll;
+    padding: 5px;
+    font-size: 15pt;
+}
+
+a.emoji-button {
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+a.emoji-button:hover {
+    background-color: #ddd;
+}
+
+div.button-chat {
+    width: 50px;
+    height: 50px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background 0.8s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.chat-content {
+    position: fixed;
+    height: auto;
+    top: 51.2px;
+    bottom: 68px;
+    left: 0px;
+    right: 0px;
+    overflow-x: hidden;
+    overflow-y:  auto;
+    background-color: #f3f4ef;
+}
+
+@media (min-width: 992px) {
+    div.chat-content {
+        top: 60px;
+    }
+}
+p.connect-disconnect-message {
+    width: 250px;
+    height: auto;
+    font-family: 'SegoeUI';
+    font-size:10pt;
+    font-weight:600;
+    text-align:center;
+    padding: 5px 10px;
+    margin: 10px auto 10px auto;
+    color: white;
+    background-color: #7d7d7d;
+    border-radius: 20px;
+    letter-spacing: .8px;
+}
+
+p.message-caller {
+    display: table;
+    max-width: 340px;
+    height: auto;
+    font-family: 'SegoeUI';
+    font-size:11pt;
+    font-weight:normal;
+    text-align:start;
+    padding: 15px;
+    margin: 10px 10px 10px auto;
+    color: black;
+    background-color: #ffecd2;
+    border-radius: 20px 20px 0px 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffcd88;
+    overflow: hidden;
+}
+
+p.message-stranger {
+    display: table;
+    max-width: 340px;
+    height: auto;
+    font-family: 'SegoeUI';
+    font-size:11pt;
+    font-weight:normal;
+    text-align:start;
+    padding: 15px;
+    margin: 10px auto 10px 10px;
+    color: black;
+    background-color: #fff;
+    border-radius: 20px 20px 20px 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d6d6d6;
+    overflow: hidden;
+}
+
+p.text-is-typing {
+    width: auto;
+    font-size: 10pt;
+    font-weight: 600;
+    text-align: left;
+    vertical-align: top;
+    line-height: 40px;
+    margin: auto;
+    display: initial;
+    color: rgba(0,0,0,.65);
+    letter-spacing: 1px;
+}
+
+div.leave-confirmation-background {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 10px;
+    background-color: rgba(0,0,0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.leave-confirmation-content {
+    width: 500px;
+    height: 220px;
+    text-align: center;
+    background-color: #e9ecef;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    max-height: calc(100vh - 70px);
+    padding-top: 0;
+}
+
+  @media screen and (max-width: 410px) {
+    div.leave-confirmation-content {
+        width: calc(100% - 20px);
+        height: 200px;
+        left: 10px;
+    }
+}
+
+p.about-header-text {
+    font-family: 'SegoeUI-Light';
+    font-size:20pt;
+    font-weight:lighter;
+    text-align:left;
+    padding: 20px 20px 0px 20px;
+    margin: 0px;
+    color: black;
+}
+
+p.about-normal-text {
+    font-family: 'SegoeUI';
+    font-size:13pt;
+    font-weight:normal;
+    text-align:justify;
+    padding: 0px 20px 20px 20px;
+    margin: 0px;
+    color: black;
+}

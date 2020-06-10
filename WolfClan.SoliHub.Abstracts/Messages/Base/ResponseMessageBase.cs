@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace WolfClan.SoliHub.Messages.Base
+{
+    public class ResponseMessageBase<T> : IResponseMessage<T> where T : class
+    {
+        public IEnumerable<T> ResponseData { get; set; }
+        public MessageTypes MessageType { get; set; }
+        public Exception exception { get; set; }
+    }
+}

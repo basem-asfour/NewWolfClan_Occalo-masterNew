@@ -1,0 +1,570 @@
+﻿/* Start global style */
+
+p {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer !important;
+}
+
+    a:hover {
+        text-decoration: none;
+        color: #f8f9fa;
+    }
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+textarea {
+    resize: none !important;
+}
+/* end global style */
+
+/* start nav-bar */
+.navbar {
+    padding: 0.35rem 1rem;
+    z-index: 999;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: bold;
+    color: #28a745 !important;
+}
+
+@media (min-width: 992px) {
+    .navbar-brand {
+        font-size: 26px;
+    }
+}
+
+li.nav-item {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: 0.3s all ease-in-out;
+}
+
+@media (min-width: 992px) {
+    li.nav-item {
+        font-size: 17px;
+    }
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+    color: #28a745 !important;
+    font-weight: 600;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #28a745 !important;
+    font-weight: 600;
+}
+
+.online-users {
+    color: #465061;
+}
+
+    .online-users .online-users-icon {
+        font-size: 20px;
+        color: #28a745 !important;
+    }
+
+    .online-users .title {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .online-users .users-count {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+/* End nav-bar */
+/* Start Home Page */
+.section-title {
+    text-align: center;
+    color: #28a745;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+
+@media (min-width: 575px) {
+    .section-title {
+        margin-bottom: 40px;
+    }
+}
+
+/* Start welcom section*/
+.welcome {
+    background-color: #272935;
+    color: #fff;
+    text-align: center;
+    min-height: 450px;
+    padding: 20px;
+}
+
+    .welcome .fa-comments {
+        font-size: 50px;
+        color: rgba(61, 177, 107, 0.8);
+        margin-bottom: 10px;
+    }
+
+@media (min-width: 992px) {
+    .welcome .fa-comments {
+        font-size: 70px;
+        margin-bottom: 0;
+    }
+}
+
+.welcome .welcome-logo {
+    font-size: 40px;
+    font-weight: 600;
+    color: #28a745;
+}
+
+@media (min-width: 992px) {
+    .welcome .welcome-logo {
+        font-size: 60px;
+    }
+}
+
+.welcome .welcome-msg {
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+@media (min-width: 575px) and (max-width: 991.99px) {
+    .welcome .welcome-msg {
+        letter-spacing: 6px;
+    }
+}
+
+@media (min-width: 992px) {
+    .welcome .welcome-msg {
+        letter-spacing: 8px;
+    }
+}
+
+.welcome .welcome-data {
+    font-size: 18px;
+    color: #7e8690;
+    margin-bottom: 30px;
+}
+
+.welcome .chat-btn {
+    font-size: 17px;
+    font-weight: 600;
+    min-width: 150px;
+    letter-spacing: 2px;
+}
+/* End welcom section*/
+
+/* Start About app */
+
+.about-app {
+    background-color: #fafafa;
+    padding: 20px 15px 0;
+    text-align: center;
+}
+
+@media (min-width: 575px) {
+    .about-app {
+        padding: 60px 30px 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .about-app {
+        text-align: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .about-app .about-app-title {
+        text-align: left;
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
+}
+
+.about-app .about-app-data {
+    line-height: 1.8;
+    font-size: 15px;
+    font-weight: 500;
+    color: #173c60b8;
+}
+
+@media (min-width: 575px) {
+    .about-app .about-app-data {
+        font-size: 17px;
+    }
+}
+
+.about-app .about-app-img {
+    text-align: center;
+}
+
+    .about-app .about-app-img img {
+        width: 80%;
+        /* transform: translateY(-60px); */
+    }
+
+@media (min-width: 1280px) {
+    .about-app .about-app-img img {
+        width: 500px;
+        transform: translateY(-70px);
+    }
+}
+
+
+/* End About app */
+
+/* Start features */
+.features {
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+@media (min-width: 575px) {
+    .features {
+        padding-top: 30px;
+        padding-bottom: 60px;
+        margin-right: 15px;
+        margin-left: 15px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.feature {
+    border: 1.5px solid rgba(61, 177, 107, 0.3);
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+    height: 100%;
+}
+
+    .fa-user-friends,
+    .fa-chart-line,
+    .feature .fa-comment-dollar {
+        font-size: 20px;
+        color: rgba(61, 177, 107, 0.8);
+    }
+
+@media (min-width: 575px) {
+    .fa-user-friends,
+    .fa-chart-line,
+    .feature .fa-comment-dollar {
+        font-size: 26px;
+    }
+}
+
+.feature .feature-title {
+    color: #465061;
+    margin: 15px 0;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+@media (min-width: 575px) {
+    .feature .feature-title {
+        font-size: 22px;
+    }
+}
+
+.feature .feature-data {
+    font-size: 15px;
+    font-weight: 500;
+    color: #173c60b8;
+    line-height: 1.8;
+}
+
+@media (min-width: 575px) {
+    .feature .feature-data {
+        font-size: 17px;
+    }
+}
+
+/* End features */
+
+
+
+/* Start What makes Occalo special? */
+.occalo-special {
+    background-color: #fafafa;
+    padding: 20px 0 30px;
+}
+
+@media (min-width: 992px) {
+    .occalo-special {
+        padding: 20px 0 40px;
+    }
+}
+
+.occalo-special .occalo-special-data {
+    text-align: center;
+    font-size: 18px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+@media (min-width: 575px) {
+    .occalo-special .occalo-special-data {
+        font-size: 20px;
+    }
+}
+
+/* End What makes Occalo special? */
+
+
+/* Start About Us */
+.about-us {
+    padding: 20px 0 30px;
+}
+
+@media (min-width: 992px) {
+    .about-us {
+        padding: 20px 0 40px;
+    }
+}
+
+.about-us .about-us-data {
+    text-align: center;
+    font-size: 18px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+@media (min-width: 575px) {
+    .about-us .about-us-data {
+        font-size: 20px;
+    }
+}
+
+.about-us .about-us-data:first-of-type {
+    padding-top: 30px;
+}
+
+.about-us .about-us-data:last-of-type {
+    padding-bottom: 0px;
+}
+
+.about-us .about-us-data .company-name {
+    font-weight: bold;
+    color: #28a745;
+    letter-spacing: 1px;
+}
+
+/* End About Us */
+
+
+
+
+/* Start Contact Us */
+.contact {
+    padding: 20px 15px 40px;
+    background-color: #fafafa;
+    position: relative;
+}
+
+@media (min-width: 575px) {
+    .contact {
+        padding: 30px 15px 60px;
+    }
+}
+
+.contact .contact-left-img,
+.contact .contact-right-img {
+    position: absolute;
+    top: 0;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.contact .contact-left-img {
+    left: 0;
+}
+
+.contact .contact-right-img {
+    right: 0;
+}
+
+    .contact .contact-left-img img,
+    .contact .contact-right-img img {
+        opacity: 0.3;
+    }
+
+@media (max-width: 1199px) {
+    .contact .container {
+        min-width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+}
+
+.contact .form-control {
+    background-color: transparent;
+    font-weight: 700;
+}
+
+.contact textarea {
+    resize: none;
+}
+
+/* End Contact Us */
+
+/* Start footer */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272935;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    padding: 2px 0 5px;
+}
+
+@media (min-width: 575px) {
+    .footer {
+        font-size: 13px;
+    }
+}
+
+.footer a {
+    color: #28a745;
+    font-weight: 500;
+}
+/* End footer */
+
+/* End Home Page
+
+/* old style*/
+
+div.loading-background {
+    background-color: #272935 !important;
+}
+
+#divTryAgain {
+    visibility: hidden;
+}
+
+div.leave-confirmation-background {
+    visibility: hidden;
+}
+
+button.button-round-box {
+    border-radius: 5px !important;
+}
+
+.header-text {
+    font-size: 24px;
+    font-weight: 600;
+    color: #272935;
+}
+
+@media screen and (max-width: 575px) {
+    .header-text {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+.double-bounce1, .double-bounce2 {
+    background-color: #fff;
+}
+
+p.normal-text {
+    color: #fff !important;
+}
+
+
+div .chat-content {
+    background-color: #272935 !important;
+}
+
+
+.chat-bar-text-area textarea {
+    border-right: none !important;
+    border-radius: 10px 0 0 10px !important;
+    height: 60px !important;
+}
+
+    .chat-bar-text-area textarea:focus,
+    .chat-bar-text-area textarea:active {
+        resize: none;
+        outline: none;
+        box-shadow: none;
+    }
+
+.div.emojis-button {
+    height: inherit !important;
+}
+
+.ripple {
+    transition: .2s all ease-in-out !important;
+}
+
+    .ripple:hover {
+        background: #28a745 !important;
+        opacity: .9;
+    }
+
+div.button-chat:disabled {
+    background-color: red;
+}
+
+p.message-caller {
+    background-color: rgba(61, 177, 107, 0.3);
+    color: rgba(255, 255, 255, 0.75);
+    border: none;
+    font-size: 16px;
+}
+
+p.message-stranger {
+    background-color: #464852;
+    color: rgba(255, 255, 255, 0.75);
+    border: none;
+    font-size: 16px;
+}
+
+p.connect-disconnect-message {
+    padding: 3px 10px !important;
+    border-radius: 5px !important;
+}
+
+
+.message-stranger,
+.message-caller {
+    border-radius: 4px !important;
+    padding: 10px 15px !important;
+}
+
+
+.form-control:focus {
+    border-color: #ced4da !important;
+}

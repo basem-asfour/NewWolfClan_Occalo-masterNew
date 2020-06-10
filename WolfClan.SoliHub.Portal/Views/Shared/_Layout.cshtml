@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Occalo is an anonymous and random chat App for talking and meeting strangers
+    Chat with new people. Make Friends. Anonymously.
+    We really hope you enjoy our anonymous chat service and that it helps you to connect with great people from around the world.
+     It’s crafted with love and maintained to ensure you have a safe and secure chat experience
+    chats are anonymous unless you tell someone who you are (not suggested!), and you can stop a chat at any time.">
+    <meta name="keywords" content="random chat, chat with stranger, omegle chatting key, talk to strangers, imeetzu">
+
+    <title>@ViewBag.Title - Occalo</title>
+
+    <link rel="icon" href="/Images/icon.ico" type="image/ico" />
+
+    <link href="/Content/css/loading.css" rel="stylesheet" />
+    <link href="/Content/css/typing.css" rel="stylesheet" />
+    <link href="/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Content/css/all.min.css" rel="stylesheet" />
+    <link href="/Content/css/animate.min.css" rel="stylesheet" />
+    <link href="/Content/css/style.css" rel="stylesheet" />
+    <link href="/Content/css/style2.css" rel="stylesheet" />
+
+</head>
+
+
+<body>
+    @Html.Partial("~/Views/Home/_header.cshtml")
+
+    <div class="">
+        @RenderBody()
+    </div>
+
+    <script src="/Content/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="/Content/Scripts/popper.min.js"></script>
+    <script src="/Content/Scripts/bootstrap.min.js"></script>
+    <script src="/Content/Scripts/fontawesome.min.js"></script>
+    <script src="/Content/Scripts/wow.min.js"></script>
+    <script src="/Content/Scripts/custom.js"></script>
+    <script src="~/Scripts/jquery.signalR-2.4.1.js"></script>
+    <script src="~/signalr/hubs"></script>
+
+    @RenderSection("scripts", required: false)
+    <script>
+            $(document).ready(function () {
+    $("#btnStart").click(function () {
+    window.location.href = '@Url.Action("Index", "Chat")';
+    });
+                   $("#btnMenuHome").click(function () {
+    window.location.href = '@Url.Action("Index", "Home")';
+                   });
+                                   $("#btnMenuLogo").click(function () {
+    window.location.href = '@Url.Action("Index", "Home")';
+                                   });
+                                               $("#btnTitle").click(function () {
+    window.location.href = '@Url.Action("Index", "Home")';
+                                   });
+
+
+    $('.navbar-nav li a').click(function () {
+
+        $(this).parent().addClass('active').siblings().removeClass('active');
+        $('.navbar-collapse').removeClass('show');
+
+
+        if (this.hasAttribute("data-value")) {
+            $('html , body').animate({
+                scrollTop: $('#' + $(this).data('value')).offset().top
+            }, 1000);
+
+        } else {
+            return;
+          }
+    });
+
+    });
+
+
+    </script>
+
+</body>
+</html>
